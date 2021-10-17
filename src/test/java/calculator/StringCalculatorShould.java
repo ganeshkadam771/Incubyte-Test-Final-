@@ -10,17 +10,16 @@ class StringCalculatorShould {
 		org.junit.runner.JUnitCore.main("is.ru.stringcalculator.StringCalculatorShould");
 	}
 	
+	// Changes to make code simple and readable
+	// Instead of creating multiple objects we use following way
     @Test
-    void empty_string_should_return_0() {
-        StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(0, stringCalculator.add(""));
-    }
-
-    @Test
-    void string_with_single_number_should_return_number_as_int() {
-        StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(1, stringCalculator.add("1"));
-    }
+    public void testEmptyString() {
+		assertEquals(0, StringCalculator.add(""));
+	}
     
+    @Test
+    public void testOneNumber() {
+    	assertEquals(1, StringCalculator.add("1"));
+    }
     
 }

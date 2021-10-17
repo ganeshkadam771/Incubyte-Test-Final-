@@ -2,7 +2,7 @@ package calculator;
 
 class StringCalculator {
 
-    public int add(String input) {
+    public static int add(String input) {
 	    	if(input.equals("")){
 				return 0;
 			}
