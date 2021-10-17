@@ -44,6 +44,10 @@ class StringCalculatorShould {
 	   assertEquals(2,StringCalculator.add("1000,2"));
    }
    
-   
+   @Test
+   public void testOtherDelimiter()
+   {
+	   assertEquals(3,StringCalculator.add("//;\n;2"));
+   }
    
 }
